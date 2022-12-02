@@ -19,7 +19,7 @@ Linear regresion model is based on following assumptions. Therefoe it is mandato
 ## Process flowchart:
 
 <details>
-    <summary>imported libraries:</summary>
+    <summary>Imported libraries:</summary>
 1.  numpy (for mathematical calculation)<br>
 2.  pandas (for data importing and manipulation in the form of DataFrame)<br>
 3.  matplotib.pyplot (for data visualization)<br>
