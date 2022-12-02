@@ -63,7 +63,7 @@ Linear regresion model is based on following assumptions. Therefoe it is mandato
 <details>
     <summary>Model Building:</summary>
   1. Linear regression (As such, after standardization of features, after normalization of features)<br>
-  2. Random forest regression (after standardization of features)<br>
+  2. Random forest regression 
  </details>
  
  <details>
