@@ -4,15 +4,72 @@ dataset.<br>
 [House Sales in King County, USA](https://www.kaggle.com/datasets/harlfoxem/housesalesprediction)
 <img src="https://i.imgur.com/kCNAFTN.jpg?1" title="source: imgur.com" />
 
+## Description:
+
+Housing price prediction is the part of Supervised learning (regression). In this project Linear regression and Random forest are taken into consideration for model building.
+
+Linear regresion model is based on following assumptions. Therefoe it is mandatory to check all those assumptions before building a model
+1. Linear relationship
+2. Homoscedasticity(Equal variance)
+3. Normality (No outlier)
+4. Independence (No auto correlation of Residual)
+5. No relation between Residual and independet variable
+6. No multi-colinearity
+
 ## Process flowchart:
-1. Reading the csv file using pandas library.
-1. EDA and visual representation (Distribution of columns) using matplotlib and seaborn.
-1. Making a model using statsmodels.api and get a summary.
->- Initially model result is very poor (Adjusted $R^2=0.08$). In this model **'date'** feature has highest t-stat.
->- After removing **'date'** column model get drastically improved (Adjusted $R^2=0.70$)
-4. Feature selection: 
->-Based on **`VIF`** analysis (Multi-colinearity) and model summary I removed sum features to get optimum accuracy.
-5. Feature extraction:
->-Based on high correlation value among features I did **`PCA`** and reduce the dimension from 6 features to 3 principal component.
-6. Linear regression: This model gives 68% accuracy.
-7. Random forest: This model gives 88% accuracy
+
+<details>
+    <summary>imported libraries:</summary>
+1.  numpy (for mathematical calculation)<br>
+2.  pandas (for data importing and manipulation in the form of DataFrame)<br>
+3.  matplotib.pyplot (for data visualization)<br>
+4.  seaborn (for data visualization)<br>
+5.  statsmodels.api (for model building)<br>
+6.  sklearn.preprocessing.StandardScaler (for standardization)<br>
+7.  sklearn.pipeline.make_pipeline (for standardization of independent variables during model building)<br>
+8.  sklearn.decomposition.PCA (for dimensionlity reduction)<br>
+9.  statsmodels.stats.outliers_influence.variance_inflation_factor (for multicolinearity analysis)<br>
+10. sklearn.model_selection.train_test_split (for splitting dataset into training and testing)<br>
+11. sklearn.linear_model.LinearRegression (for model building)<br>
+12. sklearn.ensemble.RandomForestRegressor(for model building)<br>
+13. sklearn.metrics.r2_score (for accuracy measurement)
+</details>  
+  
+<details>
+    <summary>EDA:</summary>
+1. Null value Analysis<br>
+2. Outlier Analysis
+ </details> 
+ 
+<details>
+    <summary>Feature Engineering:</summary>
+1. Feature Selection (correlation and VIF analysis)<br>
+2. Feature Extraction (Principal Component Analysis)
+ </details> 
+ 
+<details>
+    <summary>Statistical anlaysis:</summary>
+  1. Testing all assumptions of linear regression.<br>
+  2. Checking $t-stat$ and $p-value$ of individual features in linear model prediction<br>
+  3. Checking $R^2$,  $adjusted~R^2$, $F-statistic$, $log~likelyhood$, $AIC$, $BIC$
+ </details>
+ 
+<details>
+    <summary>Preprocessing:</summary>
+  1. Transorming date column from object type to datetime.<br>
+  2. Standardization of data before PCA<br>
+ </details>
+ 
+<details>
+    <summary>Model Building:</summary>
+  1. Linear regression <br>
+  2. Linear regression (after standardization of features)<br>
+  3. Linear regression (after normalization of features)
+ </details>
+ 
+ <details>
+    <summary>Conclusion:</summary>
+  1. $67\%$ of $R^2$ is explained by linear regression model and $33\%$ by residual <br>
+  2. Random forest  gives 88% accuracy<br>
+ </details>
+
