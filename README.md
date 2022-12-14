@@ -26,7 +26,7 @@ Linear regresion model is based on following assumptions. Therefoe it is mandato
 4.  seaborn (for data visualization)<br>
 5.  statsmodels.api (for model building)<br>
 6.  sklearn.preprocessing.StandardScaler (for standardization)<br>
-7.  sklearn.pipeline.make_pipeline (for standardization of independent variables during model building)<br>
+7.  sklearn.pipeline.make_pipeline (to pipeline the model building part in less time)<br>
 8.  sklearn.decomposition.PCA (for dimensionlity reduction)<br>
 9.  statsmodels.stats.outliers_influence.variance_inflation_factor (for multicolinearity analysis)<br>
 10. sklearn.model_selection.train_test_split (for splitting dataset into training and testing)<br>
