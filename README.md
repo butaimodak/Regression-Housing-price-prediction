@@ -74,7 +74,7 @@ Linear regresion model is based on following assumptions. Therefoe it is mandato
  
  <details>
     <summary>Conclusion:</summary>
-  1. $67\%$ of $R^2$ is explained by linear regression model and $33\%$ by residual <br>
+  1. Polynomial Linear regression with degree 2 gives 76% accuracy<br>
   2. Random forest  gives 88% accuracy<br>
  </details>
 
