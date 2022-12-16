@@ -67,6 +67,12 @@ Linear regresion model is based on following assumptions. Therefoe it is mandato
  </details>
  
  <details>
+    <summary>Hyper parameter tuning:</summary>
+  1. Linear regression -Polynomial regression (with degree 2, 3, 4), Rdige and Lasso regression<br>
+  2. Random forest regression - different hyper parameters using randomized search CV and grid search CV
+ </details>
+ 
+ <details>
     <summary>Conclusion:</summary>
   1. $67\%$ of $R^2$ is explained by linear regression model and $33\%$ by residual <br>
   2. Random forest  gives 88% accuracy<br>
